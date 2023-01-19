@@ -48,6 +48,12 @@ go-cqhttp的配置文件可以直接参考我的[github.com/Ersnet/MyBot/blob/ma
 
 bot启动时，请一直保持[github.com/Ersnet/MyBot/edit/main/code/main.py](https://github.com/Ersnet/MyBot/edit/main/code/main.py)的正常运行，切勿关闭窗口
 
+[github.com/Ersnet/MyBot/edit/main/wife](https://github.com/Ersnet/MyBot/edit/main/wife)中的图片并没有上传完全
+
+全部图片请见[www.aliyundrive.com/s/WnwutuV3j4J]https://www.aliyundrive.com/s/WnwutuV3j4J
+
+提取码：23ln
+
 **功能**
 
 ---
