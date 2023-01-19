@@ -20,16 +20,6 @@ QQ：3327569276
 
 GitHub：[github.com/Ersnet](https://github.com/Ersnet)
 
-**调用**
-
----
-
-据目前：所有的调用方式均为 @+bot 名称 + 功能 + 空格 + 关键词参数（后续可能会进行修改）
-
-例如：
-
-![_H3D0NFAN74PZ@JB3UQFJ9](assets/_H3D0NFAN74PZ@JB3UQFJ9-20221217000650-ml8zp5b.jpg)​
-
 **功能**
 
 ---
