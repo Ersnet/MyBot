@@ -28,6 +28,14 @@ GitHub：[github.com/Ersnet](https://github.com/Ersnet)
 
 我使用的python版本为3.10.0
 
+需要安装好python的第三方库(https://github.com/Ersnet/MyBot/edit/main/requirements.txt)
+
+直接在终端输入pip install -r requirements.txt
+
+如果安装速度较慢，可以考虑换源，这里使用清华源
+
+终端输入pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
 **功能**
 
 ---
