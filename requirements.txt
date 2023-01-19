@@ -1,0 +1,13 @@
+aiohttp      
+httpx
+requests
+sympy
+jsonpath
+flask
+flask_restful
+lxml
+numpy
+Pillow
+opencv-python
+python-docx
+pymysql
