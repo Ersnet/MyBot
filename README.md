@@ -19,6 +19,9 @@ QQ：3327569276
 哔哩哔哩：439114514 [space.bilibili.com/43911...](https://space.bilibili.com/439114514)
 
 GitHub：[github.com/Ersnet](https://github.com/Ersnet)
+**环境配置**
+需要搭建好go-cqhttp框架(https://github.com/Mrs4s/go-cqhttp)及MySQL环境(https://download.mysql.com/archives/community/)
+我使用的python版本为3.10.0
 
 **功能**
 
@@ -63,7 +66,7 @@ GitHub：[github.com/Ersnet](https://github.com/Ersnet)
 
 到目前，小小刚 bot 仅具有这些功能，后续功能等待 Ersnet 缓慢开发中~
 
-红色加粗字体表示只有bot管理员可用
+黑色加粗字体表示只有bot管理员可用
 
 **声明**
 
