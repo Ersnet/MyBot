@@ -40,6 +40,14 @@ go-cqhttp的配置文件可以直接参考我的[github.com/Ersnet/MyBot/blob/ma
 
 终端输入pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
+**bot搭建**
+
+---
+
+这里我默认将go-cqhttp框架安装在了D盘，运行时请注意源码中的路径问题
+
+bot启动时，请一直保持[github.com/Ersnet/MyBot/edit/main/code/main.py](https://github.com/Ersnet/MyBot/edit/main/code/main.py)的正常运行，切勿关闭窗口
+
 **功能**
 
 ---
