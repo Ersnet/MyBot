@@ -48,9 +48,9 @@ go-cqhttp的配置文件可以直接参考我的[github.com/Ersnet/MyBot/blob/ma
 
 bot启动时，请一直保持[github.com/Ersnet/MyBot/edit/main/code/main.py](https://github.com/Ersnet/MyBot/edit/main/code/main.py)的正常运行，切勿关闭窗口
 
-[github.com/Ersnet/MyBot/edit/main/wife](https://github.com/Ersnet/MyBot/edit/main/wife)中的图片并没有上传完全
+由于篇幅原因[github.com/Ersnet/MyBot/edit/main/wife](https://github.com/Ersnet/MyBot/edit/main/wife)中的图片并没有上传完全
 
-全部图片请见[www.aliyundrive.com/s/WnwutuV3j4J]https://www.aliyundrive.com/s/WnwutuV3j4J
+全部图片请见[www.aliyundrive.com/s/WnwutuV3j4J](https://www.aliyundrive.com/s/WnwutuV3j4J)
 
 提取码：23ln
 
@@ -111,7 +111,7 @@ bot启动时，请一直保持[github.com/Ersnet/MyBot/edit/main/code/main.py](h
 
 ---
 
-如有发现 bot 存在 bug 等问题，请及时联系创作者（Ersnet）进行修理
+如有发现 bot 存在 bug 等问题，请及时联系创作者（Ersnet）进行修理，也十分欢迎前来debug ∠( ᐛ 」∠)_
 
 最后，祝 bot 使用者们好运！（* ＾-＾ *）
 
