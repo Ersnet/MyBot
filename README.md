@@ -28,11 +28,11 @@ GitHub：[github.com/Ersnet](https://github.com/Ersnet)
 
 以及MySQL环境[download.mysql.com/archives/community/](https://download.mysql.com/archives/community/)
 
-go-cqhttp的配置文件可以直接参考我的(https://github.com/Ersnet/MyBot/blob/main/config.yml)
+go-cqhttp的配置文件可以直接参考我的[github.com/Ersnet/MyBot/blob/main/config.yml](https://github.com/Ersnet/MyBot/blob/main/config.yml)
 
 我使用的python版本为3.10.0
 
-需要安装好python的第三方库(https://github.com/Ersnet/MyBot/edit/main/requirements.txt)
+需要安装好python的第三方库[github.com/Ersnet/MyBot/edit/main/requirements.txt](https://github.com/Ersnet/MyBot/edit/main/requirements.txt)
 
 直接在终端输入pip install -r requirements.txt
 
