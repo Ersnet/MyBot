@@ -24,7 +24,11 @@ GitHub：[github.com/Ersnet](https://github.com/Ersnet)
 
 ---
 
-需要搭建好go-cqhttp框架(https://github.com/Mrs4s/go-cqhttp)及MySQL环境(https://download.mysql.com/archives/community/)
+需要搭建好go-cqhttp框架[github.com/Mrs4s/go-cqhttp](https://github.com/Mrs4s/go-cqhttp)
+
+以及MySQL环境[download.mysql.com/archives/community/](https://download.mysql.com/archives/community/)
+
+go-cqhttp的配置文件可以直接参考我的(https://github.com/Ersnet/MyBot/blob/main/config.yml)
 
 我使用的python版本为3.10.0
 
