@@ -21,8 +21,11 @@ QQ：3327569276
 GitHub：[github.com/Ersnet](https://github.com/Ersnet)
 
 **环境配置**
+
 ---
+
 需要搭建好go-cqhttp框架(https://github.com/Mrs4s/go-cqhttp)及MySQL环境(https://download.mysql.com/archives/community/)
+
 我使用的python版本为3.10.0
 
 **功能**
