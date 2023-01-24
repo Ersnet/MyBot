@@ -137,7 +137,7 @@ def get_qq_avatar(qq):
     }
     with requests.get(url, params=params, headers=headers) as resp:
         img = resp.content
-    with open(r"D:\bot\data\images\qq.png", mode="wb") as f:
+    with open(r"D:\bot\temp_qq\qq.png", mode="wb") as f:
         f.write(img)
 
 def get_dingzhen_face():
@@ -195,3 +195,77 @@ def get_xibao(content):
     draw.text(((width - x)/2, height/2), content, (0, 0, 0), font)
     img.save("D:/bot/data/images/xibao.png")
 
+def get_police():
+    police = Image.open("D:/bot/face/police.png").convert("RGBA")
+    avatar = Image.open("D:/bot/temp_qq/qq.png").convert("RGBA")
+    new_avatar = avatar.resize((237, 237))
+    police.paste(new_avatar, (228, 50, 465, 287), mask=new_avatar)
+    police.save("D:/bot/data/images/police.png")
+
+def img_to_circle():
+    ima = Image.open("D:/bot/temp_qq/qq.png").convert("RGBA")
+    size = ima.size
+    r2 = min(size[0], size[1])
+
+    if size[0] != size[1]:
+        ima = ima.resize((r2, r2), Image.ANTIALIAS)
+
+    r3 = int(r2 / 2)
+    imb = Image.new('RGBA', (r3 * 2, r3 * 2), (255, 255, 255, 0))
+    pima = ima.load()
+    pimb = imb.load()
+    r = float(r2 / 2)
+
+    for i in range(r2):
+        for j in range(r2):
+            lx = abs(i - r)
+            ly = abs(j - r)
+            l = (pow(lx, 2) + pow(ly, 2)) ** 0.5
+            if l < r3:
+                pimb[i - (r - r3), j - (r - r3)] = pima[i, j]
+
+    imb.save("D:/bot/temp_qq/qq_circle.png")
+
+def get_at_me():
+    img_to_circle()
+    at_me = Image.open("D:/bot/face/atme.png").convert("RGBA")
+    avatar = Image.open("D:/bot/temp_qq/qq_circle.png").convert("RGBA")
+    new_avatar = avatar.resize((270, 270))
+    at_me.paste(new_avatar, (40, 11, 310, 281), mask=new_avatar)
+    at_me.save("D:/bot/data/images/atme.png")
+
+def get_married():
+    married = Image.open("D:/bot/face/married.png").convert("RGBA")
+    avatar = Image.open("D:/bot/temp_qq/qq.png").convert("RGBA")
+    new_avatar = avatar.resize((1080, 1080))
+    new_avatar.paste(married, (0, 0, 1080, 1080), mask=married)
+    new_avatar.save("D:/bot/data/images/married.png")
+
+def get_throw():
+    img_to_circle()
+    throw = Image.open("D:/bot/face/throw.png").convert("RGBA")
+    avatar = Image.open("D:/bot/temp_qq/qq_circle.png").convert("RGBA")
+    new_avatar = avatar.resize((140, 140))
+    throw.paste(new_avatar, (16, 180, 156, 320), mask=new_avatar)
+    throw.save("D:/bot/data/images/throw.png")
+
+def get_perfect():
+    perfect = Image.open("D:/bot/face/perfect.png").convert("RGBA")
+    avatar = Image.open("D:/bot/temp_qq/qq.png").convert("RGBA")
+    new_avatar = avatar.resize((250, 250))
+    perfect.paste(new_avatar, (340, 130, 590, 380), mask=new_avatar)
+    perfect.save("D:/bot/data/images/perfect.png")
+
+def get_cry():
+    cry = Image.open("D:/bot/face/cry.png").convert("RGBA")
+    avatar = Image.open("D:/bot/temp_qq/qq.png").convert("RGBA")
+    new_avatar = avatar.resize((205, 205))
+    cry.paste(new_avatar, (115, 120, 320, 325), mask=new_avatar)
+    cry.save("D:/bot/data/images/cry.png")
+
+def get_safe():
+    cry = Image.open("D:/bot/face/safe.png").convert("RGBA")
+    avatar = Image.open("D:/bot/temp_qq/qq.png").convert("RGBA")
+    new_avatar = avatar.resize((215, 334))
+    cry.paste(new_avatar, (215, 140, 430, 474), mask=new_avatar)
+    cry.save("D:/bot/data/images/safe.png")
