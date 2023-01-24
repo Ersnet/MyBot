@@ -25,7 +25,7 @@ async def handle_group(gid, message, uid=None):  # 处理群聊信息
         if message.strip() == "":      # 简单的判断，只是判断其是否为空
             await send(gid, f"喵喵喵~ 当前时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
-        elif message.strip() == "帮助":
+        elif message.strip() == "帮助" or message.strip() == "help":
             await send(gid, user + "[CQ:image,file=help.png]")
 
         elif message.strip()[0:2] == "翻译":
@@ -312,8 +312,106 @@ async def handle_group(gid, message, uid=None):  # 处理群聊信息
             await send(gid, user + "[CQ:image,file=xibao.png]")
             os.remove("D:\\bot\\data\\images\\xibao.png")
 
+        elif message.strip()[:2] == "出警":
+            if "[CQ:at" in message.strip()[2:]:
+                qq = get_send_text.get_qq_number(message.strip()[2:])
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_police()
+                await send(gid, user + "[CQ:image,file=police.png]")
+                os.remove("D:\\bot\\data\\images\\police.png")
+            else:
+                qq = message.strip()[3:]
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_police()
+                await send(gid, user + "[CQ:image,file=police.png]")
+                os.remove("D:\\bot\\data\\images\\police.png")
+
+        elif message.strip()[:3] == "at我":
+            if "[CQ:at" in message.strip()[3:]:
+                qq = get_send_text.get_qq_number(message.strip()[3:])
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_at_me()
+                await send(gid, user + "[CQ:image,file=atme.png]")
+                os.remove("D:\\bot\\data\\images\\atme.png")
+            else:
+                qq = message.strip()[4:]
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_at_me()
+                await send(gid, user + "[CQ:image,file=atme.png]")
+                os.remove("D:\\bot\\data\\images\\atme.png")
+
+        elif message.strip()[:1] == "扔":
+            if "[CQ:at" in message.strip()[1:]:
+                qq = get_send_text.get_qq_number(message.strip()[1:])
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_throw()
+                await send(gid, user + "[CQ:image,file=throw.png]")
+                os.remove("D:\\bot\\data\\images\\throw.png")
+            else:
+                qq = message.strip()[2:]
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_throw()
+                await send(gid, user + "[CQ:image,file=throw.png]")
+                os.remove("D:\\bot\\data\\images\\throw.png")
+
+        elif message.strip()[:2] == "结婚":
+            if "[CQ:at" in message.strip()[2:]:
+                qq = get_send_text.get_qq_number(message.strip()[2:])
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_married()
+                await send(gid, user + "[CQ:image,file=married.png]")
+                os.remove("D:\\bot\\data\\images\\married.png")
+            else:
+                qq = message.strip()[3:]
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_married()
+                await send(gid, user + "[CQ:image,file=married.png]")
+                os.remove("D:\\bot\\data\\images\\married.png")
+
+        elif message.strip()[:3] == "完美的":
+            if "[CQ:at" in message.strip()[3:]:
+                qq = get_send_text.get_qq_number(message.strip()[3:])
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_perfect()
+                await send(gid, user + "[CQ:image,file=perfect.png]")
+                os.remove("D:\\bot\\data\\images\\perfect.png")
+            else:
+                qq = message.strip()[4:]
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_perfect()
+                await send(gid, user + "[CQ:image,file=perfect.png]")
+                os.remove("D:\\bot\\data\\images\\perfect.png")
+
+        elif message.strip()[:1] == "哭":
+            if "[CQ:at" in message.strip()[1:]:
+                qq = get_send_text.get_qq_number(message.strip()[1:])
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_cry()
+                await send(gid, user + "[CQ:image,file=cry.png]")
+                os.remove("D:\\bot\\data\\images\\cry.png")
+            else:
+                qq = message.strip()[2:]
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_cry()
+                await send(gid, user + "[CQ:image,file=cry.png]")
+                os.remove("D:\\bot\\data\\images\\cry.png")
+
+        elif message.strip()[:3] == "安全感":
+            if "[CQ:at" in message.strip()[3:]:
+                qq = get_send_text.get_qq_number(message.strip()[3:])
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_safe()
+                await send(gid, user + "[CQ:image,file=safe.png]")
+                os.remove("D:\\bot\\data\\images\\safe.png")
+            else:
+                qq = message.strip()[4:]
+                get_send_img.get_qq_avatar(qq)
+                get_send_img.get_safe()
+                await send(gid, user + "[CQ:image,file=safe.png]")
+                os.remove("D:\\bot\\data\\images\\safe.png")
+
         elif message.strip()[:2] == "拉黑":
-            if str(uid) == "bot管理员qq号":
+            if str(uid) == "3327569276":
                 u = message.strip()[3:]
                 with open(r"D:\bot\blacklist.txt", mode="a", encoding="utf-8") as f:
                     f.write(u)
@@ -454,3 +552,27 @@ async def get_group_member_list(group_id):
     return group_member_list
 
 
+# def send_group_forward_msg(group_id, messages):
+#     url = "http://127.0.0.1:5700/send_group_forward_msg"
+#     params = {
+#         "group_id": group_id,
+#         "messages": messages
+#     }
+#     with requests.get(url, params=params) as resp:
+#         print(resp)
+#
+# a = [
+#   {
+#     "type": "node",
+#     "data": {
+#       "id": "372191328"
+#     }
+#   },
+#   {
+#     "type": "node",
+#     "data": {
+#       "id": "1630011638"
+#     }
+#   }
+# ]
+# send_group_forward_msg(720299678, f"[{a}]")
