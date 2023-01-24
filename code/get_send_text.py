@@ -4,6 +4,7 @@ import docx
 import random
 import asyncio
 import aiohttp
+import re
 
 def get_kfc_v50():
     url = "http://thursday.gouyin.net/api/kfc.php"
@@ -151,4 +152,9 @@ def get_music_lyrics_about_qq(name):
         music_content += f"{n}." + "歌曲名称：" + i[0] + "  " + "创作者：" + i[1] + "\n"
 
     return music_content.strip(), music_main
+
+def get_qq_number(cq):
+    text = re.finditer("\d+", cq)
+    qq = text.__next__().group()
+    return qq
 
