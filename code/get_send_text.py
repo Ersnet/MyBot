@@ -36,7 +36,7 @@ def get_meme(meme):
     return meme_text
 
 def get_city_weather(c):
-    url = "https://tenapi.cn/wether/"
+    url = "https://tenapi.cn/v2/weather"
     params = {
         "city": c
     }
